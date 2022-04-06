@@ -19,7 +19,7 @@ namespace HST
         private void ExpensesOnly_Load(object sender, EventArgs e)
         {
             SqlConnection sql = new SqlConnection(cs);
-            string qry = "Select * from expenses where purpose = 'expenses' or purpose = 'others' ";
+            string qry = "Select * from expenses where purpose = 'expenses' or purpose = 'data' or purpose = 'others' ";
             SqlDataAdapter da = new SqlDataAdapter(qry, sql);
             DataTable dt = new DataTable();
             da.Fill(dt);

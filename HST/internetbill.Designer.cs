@@ -77,6 +77,7 @@
             this.maintanpanel.Name = "maintanpanel";
             this.maintanpanel.Size = new System.Drawing.Size(1139, 630);
             this.maintanpanel.TabIndex = 17;
+            this.maintanpanel.Paint += new System.Windows.Forms.PaintEventHandler(this.maintanpanel_Paint);
             // 
             // dateTimePicker3
             // 

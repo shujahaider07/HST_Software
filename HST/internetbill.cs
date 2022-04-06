@@ -93,11 +93,17 @@ namespace HST
 
         private void dataGridView2_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            dataGridView2.CurrentRow.Selected = true;
-            textBox3.Text = dataGridView2.Rows[e.RowIndex].Cells["id"].Value.ToString();
-            dateTimePicker2.Text = dataGridView2.Rows[e.RowIndex].Cells["date"].Value.ToString();
-            textBox1.Text = dataGridView2.Rows[e.RowIndex].Cells["amount"].Value.ToString();
-        }
+            try {
+                dataGridView2.CurrentRow.Selected = true;
+                textBox3.Text = dataGridView2.Rows[e.RowIndex].Cells["id"].Value.ToString();
+                dateTimePicker2.Text = dataGridView2.Rows[e.RowIndex].Cells["date"].Value.ToString();
+                textBox1.Text = dataGridView2.Rows[e.RowIndex].Cells["amount"].Value.ToString();
+            }
+            catch (Exception )
+            {
+
+            }
+            }
 
         private void button4_Click(object sender, EventArgs e)
         {
@@ -242,6 +248,11 @@ namespace HST
                 e.Handled = true;
 
             }
+        }
+
+        private void maintanpanel_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
     }

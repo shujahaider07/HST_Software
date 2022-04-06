@@ -132,11 +132,17 @@ namespace HST
 
         private void dataGridView2_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            textBox3.Text = dataGridView2.Rows[e.RowIndex].Cells["id"].Value.ToString();
-            dataGridView2.CurrentRow.Selected = true;
-            textBox1.Text = dataGridView2.Rows[e.RowIndex].Cells["amount"].Value.ToString();
-            dateTimePicker2.Text = dataGridView2.Rows[e.RowIndex].Cells["date"].Value.ToString();
-         
+            try
+            {
+                textBox3.Text = dataGridView2.Rows[e.RowIndex].Cells["id"].Value.ToString();
+                dataGridView2.CurrentRow.Selected = true;
+                textBox1.Text = dataGridView2.Rows[e.RowIndex].Cells["amount"].Value.ToString();
+                dateTimePicker2.Text = dataGridView2.Rows[e.RowIndex].Cells["date"].Value.ToString();
+            }
+            catch (Exception)
+            {
+
+            }
         }
 
         private void importbtn_Click(object sender, EventArgs e)
