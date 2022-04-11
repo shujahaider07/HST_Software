@@ -56,11 +56,11 @@
             // 
             this.maintanpanel.Controls.Add(this.dateTimePicker3);
             this.maintanpanel.Controls.Add(this.importbtn);
+            this.maintanpanel.Controls.Add(this.textBox2);
             this.maintanpanel.Controls.Add(this.label2);
             this.maintanpanel.Controls.Add(this.label9);
             this.maintanpanel.Controls.Add(this.label13);
             this.maintanpanel.Controls.Add(this.label3);
-            this.maintanpanel.Controls.Add(this.textBox2);
             this.maintanpanel.Controls.Add(this.dateTimePicker1);
             this.maintanpanel.Controls.Add(this.label10);
             this.maintanpanel.Controls.Add(this.textBox3);
@@ -141,10 +141,9 @@
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(745, 33);
+            this.textBox2.Location = new System.Drawing.Point(744, 30);
             this.textBox2.Margin = new System.Windows.Forms.Padding(4);
             this.textBox2.Name = "textBox2";
-            this.textBox2.ReadOnly = true;
             this.textBox2.Size = new System.Drawing.Size(119, 24);
             this.textBox2.TabIndex = 12;
             // 

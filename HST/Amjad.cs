@@ -75,12 +75,13 @@ namespace HST
         {
             SqlConnection sql = new SqlConnection(cs);
             sql.Open();
-            string qry = "insert into amjad values (@amount , @Give , @date , @monthlysalary)";
+            string qry = "insert into amjad values (@amount , @Give , @date , @monthlysalary,@purpose)";
             SqlCommand cmd = new SqlCommand(qry, sql);
             cmd.Parameters.AddWithValue("@amount", amnttxt.Text);
             cmd.Parameters.AddWithValue("@Give", comboBox1.SelectedItem);
             cmd.Parameters.AddWithValue("@date", dateTimePicker1.Value);
             cmd.Parameters.AddWithValue("@monthlysalary", monthlysalarytxt.Text);
+            cmd.Parameters.AddWithValue("@purpose", purposetxt.Text);
             int a = cmd.ExecuteNonQuery();
             if (a > 0)
             {
@@ -94,6 +95,7 @@ namespace HST
             sql.Close();
             amnttxt.Text = "";
             monthlysalarytxt.Text = "";
+            purposetxt.Text = "";
         }
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -106,6 +108,7 @@ namespace HST
                 comboBox1.Text = dataGridView1.Rows[e.RowIndex].Cells["give"].Value.ToString();
                 dateTimePicker1.Text = dataGridView1.Rows[e.RowIndex].Cells["date"].Value.ToString();
                 monthlysalarytxt.Text = dataGridView1.Rows[e.RowIndex].Cells["monthlysalary"].Value.ToString();
+              purposetxt.Text = dataGridView1.Rows[e.RowIndex].Cells["purpose"].Value.ToString();
                 
             }
             catch (Exception)
@@ -148,7 +151,7 @@ namespace HST
             givetxt.Text = "";
             monthlysalarytxt.Text = "";
             Idtxt.Text = "";
-          
+            purposetxt.Text = "";         
         }
 
         private void amnttxt_KeyPress(object sender, KeyPressEventArgs e)

@@ -73,6 +73,7 @@ namespace HST
                 textBox4.Text = dataGridView1.Rows[e.RowIndex].Cells["Givenby"].Value.ToString();
                 dateTimePicker1.Text = dataGridView1.Rows[e.RowIndex].Cells["date"].Value.ToString();
                 textBox6.Text = dataGridView1.Rows[e.RowIndex].Cells["amount"].Value.ToString();
+                textBox7.Text = dataGridView1.Rows[e.RowIndex].Cells["Others"].Value.ToString();
             }
             catch (Exception)
             {

@@ -65,7 +65,7 @@ namespace HST
                     Microsoft.Office.Interop.Excel.Worksheet worksheet = null;
                     worksheet = workbook.Sheets[1];
                     worksheet = workbook.ActiveSheet;
-                    worksheet.Name = "HST Expenses";
+                    worksheet.Name = "HST Voip";
 
                     for (int i = 1; i < dataGridView1.Columns.Count + 1; i++)
                     {
@@ -84,7 +84,7 @@ namespace HST
                     {
                         xcelApp.Columns.AutoFit();
                         var saveFileDialoge = new SaveFileDialog();
-                        saveFileDialoge.FileName = "DailyExpenses";
+                        saveFileDialoge.FileName = "VoipCost";
                         saveFileDialoge.DefaultExt = ".xlsx";
 
                         if (saveFileDialoge.ShowDialog() == DialogResult.OK)

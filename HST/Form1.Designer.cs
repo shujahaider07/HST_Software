@@ -56,6 +56,7 @@ namespace HST
             this.totalInformationToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.amjadDetailsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.viewExpensesOnlyToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.dataToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.fIXEDCOSTToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.bONUSToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.calculatorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -64,12 +65,6 @@ namespace HST
             this.label12 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.dataGridViewBonus = new System.Windows.Forms.DataGridView();
-            this.dataGridInternet = new System.Windows.Forms.DataGridView();
-            this.dataGridRent = new System.Windows.Forms.DataGridView();
-            this.dataGridUtility = new System.Windows.Forms.DataGridView();
-            this.dataGridSal = new System.Windows.Forms.DataGridView();
-            this.dataGridMaint = new System.Windows.Forms.DataGridView();
             this.label26 = new System.Windows.Forms.Label();
             this.label19 = new System.Windows.Forms.Label();
             this.dataGridView4 = new System.Windows.Forms.DataGridView();
@@ -108,6 +103,9 @@ namespace HST
             this.pictureBox16 = new System.Windows.Forms.PictureBox();
             this.label37 = new System.Windows.Forms.Label();
             this.label38 = new System.Windows.Forms.Label();
+            this.pictureBox18 = new System.Windows.Forms.PictureBox();
+            this.label41 = new System.Windows.Forms.Label();
+            this.label42 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox17)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
@@ -118,12 +116,6 @@ namespace HST
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.menuStrip1.SuspendLayout();
             this.panel4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewBonus)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridInternet)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridRent)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridUtility)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridSal)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridMaint)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
@@ -138,13 +130,14 @@ namespace HST
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox16)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox18)).BeginInit();
             this.SuspendLayout();
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(467, 409);
+            this.label3.Location = new System.Drawing.Point(536, 409);
             this.label3.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(0, 16);
@@ -174,9 +167,9 @@ namespace HST
             this.panel1.Controls.Add(this.label21);
             this.panel1.Controls.Add(this.label20);
             this.panel1.Location = new System.Drawing.Point(-1, 26);
-            this.panel1.Margin = new System.Windows.Forms.Padding(5);
+            this.panel1.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.panel1.Name = "panel1";
-            this.panel1.Padding = new System.Windows.Forms.Padding(5);
+            this.panel1.Padding = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.panel1.Size = new System.Drawing.Size(101, 745);
             this.panel1.TabIndex = 15;
             // 
@@ -185,11 +178,11 @@ namespace HST
             this.label40.AutoSize = true;
             this.label40.Font = new System.Drawing.Font("Arial Black", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label40.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label40.Location = new System.Drawing.Point(6, 690);
+            this.label40.Location = new System.Drawing.Point(26, 690);
             this.label40.Name = "label40";
-            this.label40.Size = new System.Drawing.Size(87, 15);
+            this.label40.Size = new System.Drawing.Size(40, 15);
             this.label40.TabIndex = 33;
-            this.label40.Text = "BONUS VIEW";
+            this.label40.Text = "DATA";
             // 
             // pictureBox17
             // 
@@ -248,10 +241,10 @@ namespace HST
             // 
             this.pictureBox7.BackColor = System.Drawing.Color.CadetBlue;
             this.pictureBox7.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox7.Image")));
-            this.pictureBox7.Location = new System.Drawing.Point(28, 4);
+            this.pictureBox7.Location = new System.Drawing.Point(27, 4);
             this.pictureBox7.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
             this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(44, 48);
+            this.pictureBox7.Size = new System.Drawing.Size(43, 48);
             this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox7.TabIndex = 10;
             this.pictureBox7.TabStop = false;
@@ -339,7 +332,7 @@ namespace HST
             // pictureBox3
             // 
             this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(20, 201);
+            this.pictureBox3.Location = new System.Drawing.Point(21, 201);
             this.pictureBox3.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(59, 64);
@@ -397,6 +390,7 @@ namespace HST
             // label20
             // 
             this.label20.AutoSize = true;
+            this.label20.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label20.Location = new System.Drawing.Point(-2, 71);
             this.label20.Name = "label20";
             this.label20.Size = new System.Drawing.Size(119, 15);
@@ -411,6 +405,7 @@ namespace HST
             this.totalInformationToolStripMenuItem,
             this.amjadDetailsToolStripMenuItem,
             this.viewExpensesOnlyToolStripMenuItem,
+            this.dataToolStripMenuItem,
             this.fIXEDCOSTToolStripMenuItem,
             this.bONUSToolStripMenuItem,
             this.calculatorToolStripMenuItem,
@@ -418,14 +413,14 @@ namespace HST
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Padding = new System.Windows.Forms.Padding(8, 2, 0, 2);
-            this.menuStrip1.Size = new System.Drawing.Size(1364, 25);
+            this.menuStrip1.Size = new System.Drawing.Size(1365, 25);
             this.menuStrip1.TabIndex = 16;
             this.menuStrip1.Text = "menuStrip1";
             // 
             // totalInformationToolStripMenuItem
             // 
             this.totalInformationToolStripMenuItem.Font = new System.Drawing.Font("Arial Black", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.totalInformationToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.totalInformationToolStripMenuItem.ForeColor = System.Drawing.SystemColors.MenuText;
             this.totalInformationToolStripMenuItem.Name = "totalInformationToolStripMenuItem";
             this.totalInformationToolStripMenuItem.Size = new System.Drawing.Size(106, 21);
             this.totalInformationToolStripMenuItem.Text = "ALL DETAILS";
@@ -434,7 +429,7 @@ namespace HST
             // amjadDetailsToolStripMenuItem
             // 
             this.amjadDetailsToolStripMenuItem.Font = new System.Drawing.Font("Arial Black", 9F, System.Drawing.FontStyle.Bold);
-            this.amjadDetailsToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.amjadDetailsToolStripMenuItem.ForeColor = System.Drawing.SystemColors.MenuText;
             this.amjadDetailsToolStripMenuItem.Name = "amjadDetailsToolStripMenuItem";
             this.amjadDetailsToolStripMenuItem.Size = new System.Drawing.Size(127, 21);
             this.amjadDetailsToolStripMenuItem.Text = "AMJAD DETAILS";
@@ -443,11 +438,19 @@ namespace HST
             // viewExpensesOnlyToolStripMenuItem
             // 
             this.viewExpensesOnlyToolStripMenuItem.Font = new System.Drawing.Font("Arial Black", 9F, System.Drawing.FontStyle.Bold);
-            this.viewExpensesOnlyToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.viewExpensesOnlyToolStripMenuItem.ForeColor = System.Drawing.SystemColors.MenuText;
             this.viewExpensesOnlyToolStripMenuItem.Name = "viewExpensesOnlyToolStripMenuItem";
             this.viewExpensesOnlyToolStripMenuItem.Size = new System.Drawing.Size(172, 21);
             this.viewExpensesOnlyToolStripMenuItem.Text = "VIEW EXPENSES ONLY";
             this.viewExpensesOnlyToolStripMenuItem.Click += new System.EventHandler(this.viewExpensesOnlyToolStripMenuItem_Click);
+            // 
+            // dataToolStripMenuItem
+            // 
+            this.dataToolStripMenuItem.ForeColor = System.Drawing.SystemColors.MenuText;
+            this.dataToolStripMenuItem.Name = "dataToolStripMenuItem";
+            this.dataToolStripMenuItem.Size = new System.Drawing.Size(53, 21);
+            this.dataToolStripMenuItem.Text = "DATA";
+            this.dataToolStripMenuItem.Click += new System.EventHandler(this.dataToolStripMenuItem_Click);
             // 
             // fIXEDCOSTToolStripMenuItem
             // 
@@ -499,7 +502,7 @@ namespace HST
             this.label12.BackColor = System.Drawing.Color.DarkOrange;
             this.label12.Font = new System.Drawing.Font("Arial Black", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label12.ForeColor = System.Drawing.Color.Black;
-            this.label12.Location = new System.Drawing.Point(1345, 3);
+            this.label12.Location = new System.Drawing.Point(1339, 3);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(18, 18);
             this.label12.TabIndex = 21;
@@ -509,7 +512,7 @@ namespace HST
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.panel3.Location = new System.Drawing.Point(108, 203);
+            this.panel3.Location = new System.Drawing.Point(107, 203);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(1264, 10);
             this.panel3.TabIndex = 22;
@@ -517,12 +520,6 @@ namespace HST
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.Color.Black;
-            this.panel4.Controls.Add(this.dataGridViewBonus);
-            this.panel4.Controls.Add(this.dataGridInternet);
-            this.panel4.Controls.Add(this.dataGridRent);
-            this.panel4.Controls.Add(this.dataGridUtility);
-            this.panel4.Controls.Add(this.dataGridSal);
-            this.panel4.Controls.Add(this.dataGridMaint);
             this.panel4.Controls.Add(this.label26);
             this.panel4.Controls.Add(this.label19);
             this.panel4.Controls.Add(this.dataGridView4);
@@ -531,71 +528,18 @@ namespace HST
             this.panel4.Controls.Add(this.dataGridView2);
             this.panel4.Controls.Add(this.dataGridView3);
             this.panel4.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.panel4.Location = new System.Drawing.Point(108, 28);
+            this.panel4.Location = new System.Drawing.Point(107, 28);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(1095, 173);
             this.panel4.TabIndex = 23;
-            // 
-            // dataGridViewBonus
-            // 
-            this.dataGridViewBonus.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewBonus.Location = new System.Drawing.Point(136, 47);
-            this.dataGridViewBonus.Name = "dataGridViewBonus";
-            this.dataGridViewBonus.Size = new System.Drawing.Size(43, 38);
-            this.dataGridViewBonus.TabIndex = 50;
-            this.dataGridViewBonus.Visible = false;
-            // 
-            // dataGridInternet
-            // 
-            this.dataGridInternet.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridInternet.Location = new System.Drawing.Point(136, 0);
-            this.dataGridInternet.Name = "dataGridInternet";
-            this.dataGridInternet.Size = new System.Drawing.Size(43, 39);
-            this.dataGridInternet.TabIndex = 44;
-            this.dataGridInternet.Visible = false;
-            // 
-            // dataGridRent
-            // 
-            this.dataGridRent.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridRent.Location = new System.Drawing.Point(72, 4);
-            this.dataGridRent.Name = "dataGridRent";
-            this.dataGridRent.Size = new System.Drawing.Size(48, 35);
-            this.dataGridRent.TabIndex = 43;
-            this.dataGridRent.Visible = false;
-            // 
-            // dataGridUtility
-            // 
-            this.dataGridUtility.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridUtility.Location = new System.Drawing.Point(77, 131);
-            this.dataGridUtility.Name = "dataGridUtility";
-            this.dataGridUtility.Size = new System.Drawing.Size(43, 39);
-            this.dataGridUtility.TabIndex = 40;
-            this.dataGridUtility.Visible = false;
-            // 
-            // dataGridSal
-            // 
-            this.dataGridSal.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridSal.Location = new System.Drawing.Point(77, 86);
-            this.dataGridSal.Name = "dataGridSal";
-            this.dataGridSal.Size = new System.Drawing.Size(43, 39);
-            this.dataGridSal.TabIndex = 41;
-            this.dataGridSal.Visible = false;
-            // 
-            // dataGridMaint
-            // 
-            this.dataGridMaint.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridMaint.Location = new System.Drawing.Point(77, 42);
-            this.dataGridMaint.Name = "dataGridMaint";
-            this.dataGridMaint.Size = new System.Drawing.Size(43, 38);
-            this.dataGridMaint.TabIndex = 42;
-            this.dataGridMaint.Visible = false;
+//            this.panel4.Paint += new System.Windows.Forms.PaintEventHandler(this.panel4_Paint);
             // 
             // label26
             // 
             this.label26.AutoSize = true;
             this.label26.Font = new System.Drawing.Font("Arial", 35F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label26.ForeColor = System.Drawing.Color.White;
-            this.label26.Location = new System.Drawing.Point(462, 97);
+            this.label26.Location = new System.Drawing.Point(462, 105);
             this.label26.Name = "label26";
             this.label26.Size = new System.Drawing.Size(320, 53);
             this.label26.TabIndex = 39;
@@ -607,7 +551,7 @@ namespace HST
             this.label19.AutoSize = true;
             this.label19.Font = new System.Drawing.Font("Arial Black", 52F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label19.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.label19.Location = new System.Drawing.Point(470, -13);
+            this.label19.Location = new System.Drawing.Point(474, -1);
             this.label19.Name = "label19";
             this.label19.Size = new System.Drawing.Size(304, 99);
             this.label19.TabIndex = 1;
@@ -628,7 +572,7 @@ namespace HST
             this.label14.AutoSize = true;
             this.label14.Font = new System.Drawing.Font("Arial Black", 52F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label14.ForeColor = System.Drawing.Color.White;
-            this.label14.Location = new System.Drawing.Point(254, -14);
+            this.label14.Location = new System.Drawing.Point(259, -1);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(756, 99);
             this.label14.TabIndex = 0;
@@ -666,7 +610,7 @@ namespace HST
             // 
             this.pictureBox8.BackColor = System.Drawing.Color.Black;
             this.pictureBox8.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox8.Image")));
-            this.pictureBox8.Location = new System.Drawing.Point(223, 299);
+            this.pictureBox8.Location = new System.Drawing.Point(318, 306);
             this.pictureBox8.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
             this.pictureBox8.Name = "pictureBox8";
             this.pictureBox8.Size = new System.Drawing.Size(151, 107);
@@ -680,7 +624,7 @@ namespace HST
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label1.Location = new System.Drawing.Point(249, 426);
+            this.label1.Location = new System.Drawing.Point(347, 424);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(76, 25);
             this.label1.TabIndex = 24;
@@ -691,7 +635,7 @@ namespace HST
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Arial Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label2.Location = new System.Drawing.Point(240, 260);
+            this.label2.Location = new System.Drawing.Point(341, 260);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(100, 23);
             this.label2.TabIndex = 26;
@@ -701,7 +645,7 @@ namespace HST
             // 
             this.pictureBox9.BackColor = System.Drawing.Color.Black;
             this.pictureBox9.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox9.Image")));
-            this.pictureBox9.Location = new System.Drawing.Point(484, 299);
+            this.pictureBox9.Location = new System.Drawing.Point(475, 306);
             this.pictureBox9.Margin = new System.Windows.Forms.Padding(0);
             this.pictureBox9.Name = "pictureBox9";
             this.pictureBox9.Size = new System.Drawing.Size(151, 107);
@@ -715,7 +659,7 @@ namespace HST
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Arial Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label4.Location = new System.Drawing.Point(505, 260);
+            this.label4.Location = new System.Drawing.Point(499, 260);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(92, 23);
             this.label4.TabIndex = 28;
@@ -725,7 +669,7 @@ namespace HST
             // 
             this.pictureBox10.BackColor = System.Drawing.Color.Black;
             this.pictureBox10.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox10.Image")));
-            this.pictureBox10.Location = new System.Drawing.Point(737, 299);
+            this.pictureBox10.Location = new System.Drawing.Point(632, 306);
             this.pictureBox10.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
             this.pictureBox10.Name = "pictureBox10";
             this.pictureBox10.Size = new System.Drawing.Size(151, 107);
@@ -739,7 +683,7 @@ namespace HST
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Arial Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label5.Location = new System.Drawing.Point(762, 260);
+            this.label5.Location = new System.Drawing.Point(656, 260);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(93, 23);
             this.label5.TabIndex = 30;
@@ -750,7 +694,7 @@ namespace HST
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label6.Location = new System.Drawing.Point(521, 424);
+            this.label6.Location = new System.Drawing.Point(512, 424);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(76, 25);
             this.label6.TabIndex = 31;
@@ -761,7 +705,7 @@ namespace HST
             this.label15.AutoSize = true;
             this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label15.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label15.Location = new System.Drawing.Point(764, 424);
+            this.label15.Location = new System.Drawing.Point(661, 426);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(89, 25);
             this.label15.TabIndex = 32;
@@ -771,7 +715,7 @@ namespace HST
             // 
             this.pictureBox11.BackColor = System.Drawing.Color.Black;
             this.pictureBox11.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox11.Image")));
-            this.pictureBox11.Location = new System.Drawing.Point(1010, 299);
+            this.pictureBox11.Location = new System.Drawing.Point(790, 306);
             this.pictureBox11.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
             this.pictureBox11.Name = "pictureBox11";
             this.pictureBox11.Size = new System.Drawing.Size(151, 107);
@@ -785,7 +729,7 @@ namespace HST
             this.label17.AutoSize = true;
             this.label17.Font = new System.Drawing.Font("Arial Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label17.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label17.Location = new System.Drawing.Point(1038, 256);
+            this.label17.Location = new System.Drawing.Point(823, 260);
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(97, 23);
             this.label17.TabIndex = 36;
@@ -796,7 +740,7 @@ namespace HST
             this.label18.AutoSize = true;
             this.label18.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label18.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label18.Location = new System.Drawing.Point(1047, 426);
+            this.label18.Location = new System.Drawing.Point(831, 424);
             this.label18.Name = "label18";
             this.label18.Size = new System.Drawing.Size(89, 25);
             this.label18.TabIndex = 37;
@@ -806,7 +750,7 @@ namespace HST
             // 
             this.label25.AutoSize = true;
             this.label25.ForeColor = System.Drawing.Color.Coral;
-            this.label25.Location = new System.Drawing.Point(100, 477);
+            this.label25.Location = new System.Drawing.Point(101, 477);
             this.label25.Name = "label25";
             this.label25.Size = new System.Drawing.Size(1527, 15);
             this.label25.TabIndex = 31;
@@ -870,7 +814,7 @@ namespace HST
             this.label27.AutoSize = true;
             this.label27.Font = new System.Drawing.Font("Arial Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label27.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label27.Location = new System.Drawing.Point(286, 551);
+            this.label27.Location = new System.Drawing.Point(294, 551);
             this.label27.Name = "label27";
             this.label27.Size = new System.Drawing.Size(51, 23);
             this.label27.TabIndex = 43;
@@ -892,7 +836,7 @@ namespace HST
             this.label29.AutoSize = true;
             this.label29.Font = new System.Drawing.Font("Arial Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label29.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label29.Location = new System.Drawing.Point(877, 553);
+            this.label29.Location = new System.Drawing.Point(894, 553);
             this.label29.Name = "label29";
             this.label29.Size = new System.Drawing.Size(114, 23);
             this.label29.TabIndex = 44;
@@ -903,7 +847,7 @@ namespace HST
             this.label30.AutoSize = true;
             this.label30.Font = new System.Drawing.Font("Arial Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label30.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label30.Location = new System.Drawing.Point(419, 553);
+            this.label30.Location = new System.Drawing.Point(419, 549);
             this.label30.Name = "label30";
             this.label30.Size = new System.Drawing.Size(125, 23);
             this.label30.TabIndex = 43;
@@ -914,7 +858,7 @@ namespace HST
             this.label31.AutoSize = true;
             this.label31.Font = new System.Drawing.Font("Arial Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label31.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label31.Location = new System.Drawing.Point(588, 551);
+            this.label31.Location = new System.Drawing.Point(587, 551);
             this.label31.Name = "label31";
             this.label31.Size = new System.Drawing.Size(94, 23);
             this.label31.TabIndex = 43;
@@ -927,20 +871,20 @@ namespace HST
             this.label32.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.label32.Location = new System.Drawing.Point(296, 711);
             this.label32.Name = "label32";
-            this.label32.Size = new System.Drawing.Size(51, 23);
+            this.label32.Size = new System.Drawing.Size(40, 23);
             this.label32.TabIndex = 45;
-            this.label32.Text = "Rent";
+            this.label32.Text = "xyz";
             // 
             // label33
             // 
             this.label33.AutoSize = true;
             this.label33.Font = new System.Drawing.Font("Arial Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label33.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label33.Location = new System.Drawing.Point(446, 715);
+            this.label33.Location = new System.Drawing.Point(453, 713);
             this.label33.Name = "label33";
-            this.label33.Size = new System.Drawing.Size(51, 23);
+            this.label33.Size = new System.Drawing.Size(40, 23);
             this.label33.TabIndex = 46;
-            this.label33.Text = "Rent";
+            this.label33.Text = "xyz";
             // 
             // label34
             // 
@@ -949,9 +893,9 @@ namespace HST
             this.label34.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.label34.Location = new System.Drawing.Point(618, 711);
             this.label34.Name = "label34";
-            this.label34.Size = new System.Drawing.Size(51, 23);
+            this.label34.Size = new System.Drawing.Size(40, 23);
             this.label34.TabIndex = 47;
-            this.label34.Text = "Rent";
+            this.label34.Text = "xyz";
             // 
             // label35
             // 
@@ -960,9 +904,9 @@ namespace HST
             this.label35.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.label35.Location = new System.Drawing.Point(769, 711);
             this.label35.Name = "label35";
-            this.label35.Size = new System.Drawing.Size(51, 23);
+            this.label35.Size = new System.Drawing.Size(40, 23);
             this.label35.TabIndex = 48;
-            this.label35.Text = "Rent";
+            this.label35.Text = "xyz";
             // 
             // label36
             // 
@@ -971,9 +915,9 @@ namespace HST
             this.label36.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.label36.Location = new System.Drawing.Point(927, 713);
             this.label36.Name = "label36";
-            this.label36.Size = new System.Drawing.Size(51, 23);
+            this.label36.Size = new System.Drawing.Size(40, 23);
             this.label36.TabIndex = 49;
-            this.label36.Text = "Rent";
+            this.label36.Text = "xyz";
             // 
             // pictureBox16
             // 
@@ -994,27 +938,65 @@ namespace HST
             this.label37.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label37.Location = new System.Drawing.Point(1081, 709);
             this.label37.Name = "label37";
-            this.label37.Size = new System.Drawing.Size(89, 25);
+            this.label37.Size = new System.Drawing.Size(48, 25);
             this.label37.TabIndex = 51;
-            this.label37.Text = "label37";
+            this.label37.Text = "xyz";
             // 
             // label38
             // 
             this.label38.AutoSize = true;
             this.label38.Font = new System.Drawing.Font("Arial Black", 12F, System.Drawing.FontStyle.Bold);
             this.label38.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label38.Location = new System.Drawing.Point(1071, 551);
+            this.label38.Location = new System.Drawing.Point(1082, 551);
             this.label38.Name = "label38";
             this.label38.Size = new System.Drawing.Size(65, 23);
             this.label38.TabIndex = 52;
             this.label38.Text = "Bonus";
+            // 
+            // pictureBox18
+            // 
+            this.pictureBox18.BackColor = System.Drawing.Color.Black;
+            this.pictureBox18.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox18.Image")));
+            this.pictureBox18.Location = new System.Drawing.Point(950, 306);
+            this.pictureBox18.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
+            this.pictureBox18.Name = "pictureBox18";
+            this.pictureBox18.Size = new System.Drawing.Size(151, 107);
+            this.pictureBox18.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox18.TabIndex = 53;
+            this.pictureBox18.TabStop = false;
+            this.pictureBox18.Click += new System.EventHandler(this.pictureBox18_Click);
+            // 
+            // label41
+            // 
+            this.label41.AutoSize = true;
+            this.label41.Font = new System.Drawing.Font("Arial Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label41.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label41.Location = new System.Drawing.Point(994, 260);
+            this.label41.Name = "label41";
+            this.label41.Size = new System.Drawing.Size(51, 23);
+            this.label41.TabIndex = 54;
+            this.label41.Text = "Data";
+            // 
+            // label42
+            // 
+            this.label42.AutoSize = true;
+            this.label42.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label42.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label42.Location = new System.Drawing.Point(993, 424);
+            this.label42.Name = "label42";
+            this.label42.Size = new System.Drawing.Size(89, 25);
+            this.label42.TabIndex = 55;
+            this.label42.Text = "label42";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.ClientSize = new System.Drawing.Size(1364, 749);
+            this.ClientSize = new System.Drawing.Size(1365, 749);
+            this.Controls.Add(this.label42);
+            this.Controls.Add(this.label41);
+            this.Controls.Add(this.pictureBox18);
             this.Controls.Add(this.label38);
             this.Controls.Add(this.label37);
             this.Controls.Add(this.pictureBox16);
@@ -1077,12 +1059,6 @@ namespace HST
             this.menuStrip1.PerformLayout();
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewBonus)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridInternet)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridRent)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridUtility)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridSal)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridMaint)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
@@ -1097,6 +1073,7 @@ namespace HST
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox16)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox18)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1163,24 +1140,22 @@ namespace HST
         private System.Windows.Forms.Label label29;
         private System.Windows.Forms.Label label30;
         private System.Windows.Forms.Label label31;
-        private System.Windows.Forms.DataGridView dataGridInternet;
-        private System.Windows.Forms.DataGridView dataGridRent;
-        private System.Windows.Forms.DataGridView dataGridUtility;
-        private System.Windows.Forms.DataGridView dataGridSal;
-        private System.Windows.Forms.DataGridView dataGridMaint;
         private System.Windows.Forms.Label label32;
         private System.Windows.Forms.Label label33;
         private System.Windows.Forms.Label label34;
         private System.Windows.Forms.Label label35;
         private System.Windows.Forms.Label label36;
         private System.Windows.Forms.ToolStripMenuItem bONUSToolStripMenuItem;
-        private System.Windows.Forms.DataGridView dataGridViewBonus;
         private System.Windows.Forms.PictureBox pictureBox16;
         private System.Windows.Forms.Label label37;
         private System.Windows.Forms.Label label38;
         private System.Windows.Forms.Label label40;
         private System.Windows.Forms.PictureBox pictureBox17;
         private System.Windows.Forms.Label label39;
+        private System.Windows.Forms.PictureBox pictureBox18;
+        private System.Windows.Forms.Label label41;
+        private System.Windows.Forms.Label label42;
+        private System.Windows.Forms.ToolStripMenuItem dataToolStripMenuItem;
     }
 }
 

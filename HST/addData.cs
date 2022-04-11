@@ -40,13 +40,16 @@ namespace HST
         {
 
             SqlConnection sql = new SqlConnection(cs);
-            String qry = "insert into Expenses values(@name , @purpose , @amount  , @givenby , @date)";
-            SqlCommand cmd = new SqlCommand(qry, sql);
+            //String qry = "insert into Expenses values(@name , @purpose , @amount  , @givenby , @date , @others)";
+            SqlCommand cmd = new SqlCommand("data_insert", sql);
+            cmd.CommandType = CommandType.StoredProcedure;
             cmd.Parameters.AddWithValue("@name", nametxt.Text);
             cmd.Parameters.AddWithValue("@purpose", purposetxt.Text);
             cmd.Parameters.AddWithValue("@amount", amounttxt.Text);
             cmd.Parameters.AddWithValue("@givenby", givenbytxt.Text);
             cmd.Parameters.AddWithValue("@date", dateTimePicker1.Value);
+            cmd.Parameters.AddWithValue("@others", richTextBox1.Text);
+
             sql.Open();
             int a = cmd.ExecuteNonQuery();
 
@@ -112,8 +115,10 @@ namespace HST
         public void bindGridView()
         {
             SqlConnection sql = new SqlConnection(cs);
-            String qry = "select name,amount , purpose , givenby , date  from expenses";
-            SqlDataAdapter da = new SqlDataAdapter(qry, sql);
+            //String qry = "select name, amount , purpose , givenby , date , others  from expenses";
+            SqlDataAdapter da = new SqlDataAdapter("View_Details", sql);
+            SqlCommand cmd = new SqlCommand("View_Details",sql);
+            cmd.CommandType = CommandType.StoredProcedure;
             DataTable dt = new DataTable();
             da.Fill(dt);
             dataGridView1.DataSource = dt;
@@ -122,12 +127,12 @@ namespace HST
         private void addData_Load(object sender, EventArgs e)
         {
             purposetxt.Text = "Expenses";
-            String[] arr = { "Expenses", "Voip", "Sns", "Data" ,"Others" };
+            String[] arr = { "Expenses", "Voip", "Sns", "Data", "Others" };
             foreach (String item in arr)
             {
                 purposetxt.Items.Add(item);
             }
-
+            
 
             style();
             bindGridView();
@@ -157,7 +162,32 @@ namespace HST
             bindGridView();
         }
 
+        private void purposetxt_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            
+            char ch = e.KeyChar;
+            if (char.IsLetterOrDigit(ch))
+            {
+                e.Handled = true;
 
+            }
+            else if (e.KeyChar == 8)
+            {
+                e.Handled = true;
+
+            }
+            else
+            {
+
+                e.Handled = true;
+
+            }
+        }
+
+        private void h(object sender, EventArgs e)
+        {
+
+        }
     }
 
 

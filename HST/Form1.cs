@@ -19,6 +19,7 @@ namespace HST
         int utilitybill;
         int internetbill;
         int bonus;
+
         public Form1()
         {
             InitializeComponent();
@@ -38,7 +39,7 @@ namespace HST
             utilityAdd();
             internetAdd();
             bonusAdd();
-            
+
 
         }
 
@@ -71,6 +72,8 @@ namespace HST
 
         private void Form1_Activated(object sender, EventArgs e)
         {
+
+            AddData();
             utilityAdd();
             saladd();
             rentadd();
@@ -83,7 +86,7 @@ namespace HST
             internetAdd();
             maintenanceAdd();
             bonusAdd();
-            
+
         }
 
         private void amjadDetailsToolStripMenuItem_Click(object sender, EventArgs e)
@@ -131,6 +134,7 @@ namespace HST
 
 
             FinalCost = 0;
+
             for (int i = 0; i < dataGridView1.Rows.Count; i++)
             {
                 FinalCost = FinalCost + Convert.ToInt32(dataGridView1.Rows[i].Cells[3].Value);
@@ -141,20 +145,23 @@ namespace HST
             label1.Text = FinalCost.ToString();
 
 
+
         }
         public void snsCostGrid()
         {
 
             SqlConnection sql = new SqlConnection(cs);
             sql.Open();
-            String qry = "Select sum(amount) from expenses where purpose = 'sns' ";
+            String qry = "Select sum(amount) from expenses where purpose = 'sns'or purpose = 'Others' ";
             SqlCommand cmd = new SqlCommand(qry, sql);
             SqlDataReader dr = cmd.ExecuteReader();
+
             while (dr.Read())
             {
                 label6.Text = dr[0].ToString();
 
             }
+
             sql.Close();
 
 
@@ -184,6 +191,7 @@ namespace HST
 
 
         //}
+
         public void voipCostGrid()
         {
 
@@ -191,12 +199,12 @@ namespace HST
             voipCost = 0;
             for (int i = 0; i < dataGridView3.Rows.Count; i++)
             {
+                
                 voipCost = voipCost + Convert.ToInt32(dataGridView3.Rows[i].Cells[3].Value);
 
-
             }
-            label15.Text = voipCost.ToString();
 
+            label15.Text = voipCost.ToString();
 
         }
 
@@ -206,7 +214,7 @@ namespace HST
 
             SqlConnection sql = new SqlConnection(cs);
             sql.Open();
-            String qry = "select Sum(amount) from expenses where purpose = 'expenses' or purpose = 'data' or purpose = 'others' ";
+            String qry = "select Sum(amount) from expenses where purpose = 'expenses' ";
             SqlCommand cmd = new SqlCommand(qry, sql);
             SqlDataReader dr = cmd.ExecuteReader();
             while (dr.Read())
@@ -214,28 +222,9 @@ namespace HST
                 label18.Text = dr[0].ToString();
             }
 
+
+
             sql.Close();
-
-
-
-            int cost = 10000;
-            int cost2 = 15000;
-
-            if (expenses >= cost)
-            {
-
-                label18.ForeColor = System.Drawing.Color.Orange;
-            }
-            else if (expenses > cost2)
-            {
-                label18.ForeColor = System.Drawing.Color.DarkRed;
-            }
-            else if (expenses <= cost)
-            {
-                label18.ForeColor = System.Drawing.Color.Green;
-
-            }
-
 
 
 
@@ -416,8 +405,40 @@ namespace HST
 
         private void pictureBox17_Click(object sender, EventArgs e)
         {
-            bonusView b = new bonusView();
-            b.ShowDialog();
+            DataView dv = new DataView();
+            dv.ShowDialog();
         }
+
+        private void pictureBox18_Click(object sender, EventArgs e)
+        {
+            DataView dv = new DataView();
+            dv.ShowDialog();
+        }
+
+        private void dataToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            DataView dv = new DataView();
+            dv.ShowDialog();
+
+        }
+
+        public void AddData()
+        {
+            SqlConnection sql = new SqlConnection(cs);
+            sql.Open();
+            String qry = "select sum(amount) from expenses where purpose = 'data' ";
+            SqlCommand cmd = new SqlCommand(qry, sql);
+            SqlDataReader dr = cmd.ExecuteReader();
+            while (dr.Read())
+            {
+
+                label42.Text = dr[0].ToString();
+            }
+
+            sql.Close();
+
+        }
+
+
     }
 }

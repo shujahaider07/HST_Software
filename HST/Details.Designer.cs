@@ -57,6 +57,8 @@ namespace HST
             this.label13 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
+            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.label14 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -101,7 +103,7 @@ namespace HST
             // 
             // textBox4
             // 
-            this.textBox4.Location = new System.Drawing.Point(332, 179);
+            this.textBox4.Location = new System.Drawing.Point(328, 178);
             this.textBox4.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(236, 24);
@@ -156,7 +158,7 @@ namespace HST
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Arial Black", 9F, System.Drawing.FontStyle.Bold);
-            this.label4.Location = new System.Drawing.Point(256, 183);
+            this.label4.Location = new System.Drawing.Point(254, 183);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(72, 17);
@@ -260,7 +262,7 @@ namespace HST
             this.label8.BackColor = System.Drawing.Color.DarkOrange;
             this.label8.Font = new System.Drawing.Font("Arial Black", 40F, System.Drawing.FontStyle.Bold);
             this.label8.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label8.Location = new System.Drawing.Point(162, 0);
+            this.label8.Location = new System.Drawing.Point(283, 0);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(623, 105);
             this.label8.TabIndex = 0;
@@ -268,9 +270,9 @@ namespace HST
             // 
             // progressBar1
             // 
-            this.progressBar1.Location = new System.Drawing.Point(115, 346);
+            this.progressBar1.Location = new System.Drawing.Point(115, 371);
             this.progressBar1.Name = "progressBar1";
-            this.progressBar1.Size = new System.Drawing.Size(328, 35);
+            this.progressBar1.Size = new System.Drawing.Size(861, 10);
             this.progressBar1.TabIndex = 22;
             this.progressBar1.Visible = false;
             // 
@@ -301,7 +303,6 @@ namespace HST
             this.dateTimePicker2.Name = "dateTimePicker2";
             this.dateTimePicker2.Size = new System.Drawing.Size(20, 24);
             this.dateTimePicker2.TabIndex = 25;
-//            this.dateTimePicker2.ValueChanged += new System.EventHandler(this.dateTimePicker2_ValueChanged);
             // 
             // dateTimePicker3
             // 
@@ -311,7 +312,6 @@ namespace HST
             this.dateTimePicker3.Size = new System.Drawing.Size(19, 24);
             this.dateTimePicker3.TabIndex = 26;
             this.dateTimePicker3.CloseUp += new System.EventHandler(this.dateTimePicker3_CloseUp);
-///            this.dateTimePicker3.ValueChanged += new System.EventHandler(this.dateTimePicker3_ValueChanged);
             // 
             // label13
             // 
@@ -341,11 +341,32 @@ namespace HST
             this.label11.TabIndex = 27;
             this.label11.Text = "From";
             // 
+            // textBox7
+            // 
+            this.textBox7.Location = new System.Drawing.Point(326, 234);
+            this.textBox7.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.textBox7.Name = "textBox7";
+            this.textBox7.Size = new System.Drawing.Size(236, 24);
+            this.textBox7.TabIndex = 29;
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Font = new System.Drawing.Font("Arial Black", 9F, System.Drawing.FontStyle.Bold);
+            this.label14.Location = new System.Drawing.Point(256, 238);
+            this.label14.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(59, 17);
+            this.label14.TabIndex = 30;
+            this.label14.Text = "Others :";
+            // 
             // Details
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1067, 749);
+            this.Controls.Add(this.label14);
+            this.Controls.Add(this.textBox7);
             this.Controls.Add(this.dateTimePicker3);
             this.Controls.Add(this.label12);
             this.Controls.Add(this.label13);
@@ -355,7 +376,6 @@ namespace HST
             this.Controls.Add(this.label10);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.progressBar1);
-            this.Controls.Add(this.panel1);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.textBox5);
             this.Controls.Add(this.button2);
@@ -371,6 +391,7 @@ namespace HST
             this.Controls.Add(this.textBox3);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.panel1);
             this.Font = new System.Drawing.Font("Arial Black", 9F, System.Drawing.FontStyle.Bold);
             this.ForeColor = System.Drawing.SystemColors.ControlText;
             this.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
@@ -415,5 +436,7 @@ namespace HST
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.TextBox textBox7;
+        private System.Windows.Forms.Label label14;
     }
 }

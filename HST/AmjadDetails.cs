@@ -112,6 +112,7 @@ namespace HST
             idtxt.Text = "";
             amonttxt.Text = "";
             monthlytxt.Text = "";
+            purposetxt.Text = "";
 
         }
 
@@ -125,6 +126,7 @@ namespace HST
                 comboBox1.Text = dataGridView1.Rows[e.RowIndex].Cells["give"].Value.ToString();
                 dateTimePicker1.Text = dataGridView1.Rows[e.RowIndex].Cells["date"].Value.ToString();
                 monthlytxt.Text = dataGridView1.Rows[e.RowIndex].Cells["monthlysalary"].Value.ToString();
+                purposetxt.Text = dataGridView1.Rows[e.RowIndex].Cells["purpose"].Value.ToString();
 
             }
             catch (Exception)
@@ -138,7 +140,7 @@ namespace HST
         {
             SqlConnection sql = new SqlConnection(cs);
             sql.Open();
-            string qry = "Update amjad set amount = '" + amonttxt.Text + "' , give ='" + comboBox1.SelectedItem + "' , date = '" + dateTimePicker1.Value + "' , monthlySalary = '" + monthlytxt.Text + "' where id = '" + idtxt.Text + "'";
+            string qry = "Update amjad set amount = '" + amonttxt.Text + "' , give ='" + comboBox1.SelectedItem + "' , date = '" + dateTimePicker1.Value + "' , monthlySalary = '" + monthlytxt.Text + "' , purpose = '"+purposetxt.Text+"' where id = '" + idtxt.Text + "'";
 
             SqlCommand cmd = new SqlCommand(qry, sql);
             int a = cmd.ExecuteNonQuery();
@@ -155,6 +157,7 @@ namespace HST
             idtxt.Text = "";
             amonttxt.Text = "";
             monthlytxt.Text = "";
+            purposetxt.Text = "";
 
 
 
